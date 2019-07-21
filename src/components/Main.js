@@ -7,7 +7,7 @@ import '../styles/Main.css'
 
 export class Main extends React.Component {
   state = {
-    playerId: nba.findPlayer('Lebron James').playerId,
+    playerId: nba.findPlayer('Kawhi Leonard').playerId,
     playerInfo: {}
   }
 
