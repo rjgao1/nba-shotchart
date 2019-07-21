@@ -5,6 +5,8 @@ import { hexbin } from 'd3-hexbin'
 import { court, shots } from 'd3-shotchart'
 import PropTypes from 'prop-types'
 
+import '../styles/ShotChart.css'
+
 window.d3_hexbin = {hexbin: hexbin} // workaround library problem
 
 export class ShotChart extends React.Component {
@@ -27,6 +29,7 @@ export class ShotChart extends React.Component {
       const courtSelection = d3.select("#shot-chart")
       const chart_court = court().width(500)
       const chart_shots = shots().shotRenderThreshold(2).displayToolTips(true).displayType("hexbin")
+      // selection.call always return the selection and not the return value of function passed in
       courtSelection.call(chart_court)
       courtSelection.datum(final_shots).call(chart_shots)
     })
@@ -34,7 +37,7 @@ export class ShotChart extends React.Component {
   render() {
     return (
       <div id="shot-chart"></div>
-    )
+    );
   }
 }
 
