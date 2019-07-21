@@ -3,6 +3,8 @@ import { Profile } from './Profile'
 import { ShotChart } from './ShotChart'
 import nba from 'nba'
 
+import '../styles/Main.css'
+
 export class Main extends React.Component {
   state = {
     playerId: nba.findPlayer('Lebron James').playerId,
