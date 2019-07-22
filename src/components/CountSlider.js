@@ -38,6 +38,7 @@ export class CountSlider extends React.Component {
             min={1}
             max={20}
             style={{ marginLeft: 16 }}
+            value={this.state.inputValue}
             onChange={this.onChange}
           />
         </Col>
