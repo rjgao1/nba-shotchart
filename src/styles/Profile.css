@@ -9,6 +9,13 @@
   box-sizing: border-box;
 }
 
+.profile-entry {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  padding: 10px 10px 10px;
+}
+
 .profile-entry-left {
   text-align: left;
   font-weight: bold;

@@ -27,7 +27,7 @@ export class Main extends React.Component {
     return (
       <div className="main">
         <Profile playerInfo={this.state.playerInfo} />
-        <DataViewContainer playerId={this.state.playerId} />
+        <DataViewContainer playerId={this.state.playerId}/>
       </div>
     )
   }
