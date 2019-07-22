@@ -1,13 +1,13 @@
 import React, { Component } from 'react';
 // import logo from './assets/images/logo.svg';
 //import './styles/App.css';
-import { TopBar } from './components/TopBar';
+import { TopNavBar } from './components/TopNavBar';
 import { Main } from './components/Main'
 
 function App() {
   return (
    <div className="App">
-     <TopBar/>
+     <TopNavBar/>
      <Main/>
    </div>
   )
