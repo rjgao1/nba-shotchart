@@ -2,18 +2,23 @@ import React from 'react'
 import { Profile } from './Profile'
 import { ShotChart } from './ShotChart'
 import nba from 'nba'
+import { DEFAULT_PLAYER_INFO } from '../constants'
 
 import '../styles/Main.css'
 import { DataViewContainer } from './DataViewContainer';
+import { SearchBar } from './SearchBar';
 
 export class Main extends React.Component {
   state = {
-    playerId: nba.findPlayer('Kawhi Leonard').playerId,
-    playerInfo: {}
+    playerInfo: DEFAULT_PLAYER_INFO
   }
 
   componentDidMount() {
-    nba.stats.playerInfo({ PlayerID: this.state.playerId })
+    this.loadPlayerInfo(this.state.playerInfo.fullName)
+  }
+
+  loadPlayerInfo = (playerName) => {
+    nba.stats.playerInfo({ PlayerID: nba.findPlayer(playerName).playerId })
       .then((info) => {
         const playerInfo = Object.assign(info.commonPlayerInfo[0],
           info.playerHeadlineStats[0])
@@ -26,8 +31,11 @@ export class Main extends React.Component {
   render() {
     return (
       <div className="main">
-        <Profile playerInfo={this.state.playerInfo} />
-        <DataViewContainer playerId={this.state.playerId}/>
+        <SearchBar />
+        <div className="player">
+          <Profile playerInfo={this.state.playerInfo} />
+          <DataViewContainer playerId={this.state.playerInfo.playerId}/>
+        </div>
       </div>
     )
   }
