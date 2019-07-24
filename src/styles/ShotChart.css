@@ -81,6 +81,12 @@ svg circle.shot.make {
   stroke-width: 0.05;
 }
 
+svg circle.shot.miss {
+  fill: red;
+  stroke: white;
+  stroke-width: 0.05;
+}
+
 path {
   stroke: white;
   stroke-width: 0.05;
