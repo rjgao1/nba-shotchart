@@ -1,5 +1,5 @@
 import React from 'react'
-import { POFILE_PIC_URL_PREFIX, TEAM_PIC_URL_PREFIX, PROFILE_PIC_URL_PREFIX } from '../constants'
+import { TEAM_PIC_URL_PREFIX, PROFILE_PIC_URL_PREFIX } from '../constants'
 import '../styles/Profile.css'
 
 export class Profile extends React.Component {
