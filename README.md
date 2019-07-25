@@ -1,7 +1,10 @@
 # nba-shotchart
-App is hosted here http://nba-shotchart.appspot.com 
+App is hosted here http://nba-shotchart.appspot.com  
 
 An interactive dashboard for NBA player shot data.  
+
+Built with React, d3-shotchart (https://www.npmjs.com/package/d3-shotchart), a Node.js client for stats.nba.com API endpoints (https://www.npmjs.com/package/nba) and Ant Design (https://ant.design/). 
+
 ![hexbin screenshot](screenshot-hexbin.png?raw=true)
 
 The hexbin chart visualizes the frequency and efficiency of shots made on the court.  
