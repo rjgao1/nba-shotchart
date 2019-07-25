@@ -1,3 +1,15 @@
+# nba-shotchart
+App is hosted here http://nba-shotchart.appspot.com 
+
+An interactive dashboard for NBA player shot data.  
+
+
+
+
+
+
+
+-------------------------
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
