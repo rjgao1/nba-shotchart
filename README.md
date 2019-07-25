@@ -2,6 +2,15 @@
 App is hosted here http://nba-shotchart.appspot.com 
 
 An interactive dashboard for NBA player shot data.  
+![hexbin screenshot](screenshot-hexbin.png?raw=true)
+
+The hexbin chart visualizes the frequency and efficiency of shots made on the court.  
+In the hexbin mode, user can filter shots by minimum frequency using the slide bar or input box. Maximum frequency for this filter is 20.
+
+![scatter screenshot](screenshot-scatter.png?raw=true)
+
+The scatter chart visualizes the missed and made shots, while the tooltips display the distance and action type of the shots.
+
 
 
 
