@@ -1,5 +1,6 @@
 # nba-shotchart
-App is hosted here http://nba-shotchart.appspot.com  
+~App is hosted here http://nba-shotchart.appspot.com~
+(GCP link broke. Currently under maintaince)
 
 An interactive dashboard for NBA player shot data.  
 
